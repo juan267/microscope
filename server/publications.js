@@ -8,5 +8,5 @@ Meteor.publish('comments', function(postId){
 })
 
 Meteor.publish('notifications', function() {
-  return Notification.find();
+  return Notifications.find();
 })
