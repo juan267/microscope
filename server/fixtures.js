@@ -44,7 +44,8 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://meteor.com',
-    submitted: new Date(now - 10 * 3600 * 1000)
+    submitted: new Date(now - 10 * 3600 * 1000),
+    commentsCount: 0
   });
 
   Posts.insert({
@@ -52,6 +53,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://themeteorbook.com',
-    submitted: new Date(now - 12 * 3600 * 1000)
+    submitted: new Date(now - 12 * 3600 * 1000),
+    commentsCount: 0
   });
 }

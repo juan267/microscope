@@ -30,7 +30,7 @@ Template.commentSubmit.events({
       if(error){
         throwError(error.reason)
       } else {
-        console.log(e.target.body.value)
+        console.log(commentId)
       }
     })
   }
